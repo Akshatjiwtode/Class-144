@@ -67,28 +67,28 @@ function draw(){
     {
         circle(rightWristX, rightWristY, 20);
 
-        if(rightWrist > 0 && rightWristY <=100){
-            document.getElementById("sound").innerHTML = "Speed = 0.5";
+        if(rightWristY > 0 && rightWristY <=100){
+            document.getElementById("speed").innerHTML = "Speed = 0.5";
             song.rate(0.5);
         }
 
-        else if(rightWrist > 100 && rightWristY <=200){
-            document.getElementById("sound").innerHTML = "Speed = 1";
+        else if(rightWristY > 100 && rightWristY <=200){
+            document.getElementById("speed").innerHTML = "Speed = 1";
             song.rate(1);
         }
 
-        else if(rightWrist > 200 && rightWristY <=300){
-            document.getElementById("sound").innerHTML = "Speed = 1.5";
+        else if(rightWristY > 200 && rightWristY <=300){
+            document.getElementById("speed").innerHTML = "Speed = 1.5";
             song.rate(1.5);
         }
 
-        else if(rightWrist > 300 && rightWristY <=400){
-            document.getElementById("sound").innerHTML = "Speed = 2";
+        else if(rightWristY > 300 && rightWristY <=400){
+            document.getElementById("speed").innerHTML = "Speed = 2";
             song.rate(2);
         }
 
-        else if(rightWrist > 400 && rightWristY <=500){
-            document.getElementById("sound").innerHTML = "Speed = 2.5";
+        else if(rightWristY > 400 && rightWristY <=500){
+            document.getElementById("speed").innerHTML = "Speed = 2.5";
             song.rate(2.5);
         }
     }
